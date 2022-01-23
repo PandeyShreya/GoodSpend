@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/login"
+        android:label="GoodSpend"
+        android:roundIcon="@drawable/login"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:replace="android:label">
+        <activity
+            android:name=".AutopayEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReminderEditActivity"
+            android:exported="true"
+            android:parentActivityName=".AlertsActivity" />
+        <activity
+            android:name=".UpdateProfileActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AutopayNotificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddMember"
+            android:exported="true" />
+        <activity
+            android:name=".Profile"
+            android:exported="true" />
+        <activity
+            android:name=".AutopayHome"
+            android:exported="true"
+            android:label="Autopay" />
+        <activity
+            android:name=".DestinationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddReminderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AutopayActivity"
+            android:exported="true"
+            android:label="AutoPay" />
+        <activity
+            android:name=".AddExpenseActivity"
+            android:exported="true"
+            android:label="Expense" />
+        <activity
+            android:name=".AlertsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ChartActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TransactionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddIncomeActivity"
+            android:exported="true"
+            android:label="Income" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AlarmReceiver" />
+
+        <activity
+            android:name=".Registration"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="GoodSpend" />
+    </application>
+
+</manifest>

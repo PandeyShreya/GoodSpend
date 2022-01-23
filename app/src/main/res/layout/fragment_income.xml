@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:orientation="vertical"
+    tools:context=".Fragment.IncomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/fragment.income.linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        app:cardCornerRadius="25dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/income.salary.image"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Category:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salary"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Amount:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/transaction_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="#4CAF50"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--               <LinearLayout-->
+            <!--                   android:layout_width="290dp"-->
+            <!--                   android:layout_height="40dp"-->
+            <!--                   android:padding="5dp"-->
+            <!--                   android:orientation="horizontal">-->
+
+            <!--                   <TextView-->
+            <!--                       android:layout_width="wrap_content"-->
+            <!--                       android:layout_height="30dp"-->
+            <!--                       android:text="Date:"-->
+            <!--                       android:textSize="18sp"-->
+            <!--                       android:textStyle="bold"-->
+            <!--                       android:textColor="@color/colorPrimary"/>-->
+
+            <!--                   <TextView-->
+            <!--                       android:id="@+id/transaction_salary_date"-->
+            <!--                       android:layout_width="match_parent"-->
+            <!--                       android:layout_height="30dp"-->
+            <!--                       android:text="00/00/0000"-->
+            <!--                       android:textColor="@color/colorPrimary"-->
+            <!--                       android:textSize="18dp"-->
+            <!--                       android:textStyle="bold" />-->
+
+            <!--               </LinearLayout>-->
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/income.salary.image"
+            android:layout_width="78dp"
+            android:layout_height="79dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="6sp"
+            android:src="@drawable/salary" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment.income.linear2"
+        android:layout_marginTop="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment.income.linear1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/income.saving.image"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Category:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Savings"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Amount:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/transaction_saving"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="#4CAF50"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--               <LinearLayout-->
+            <!--                   android:layout_width="290dp"-->
+            <!--                   android:layout_height="40dp"-->
+            <!--                   android:padding="5dp"-->
+            <!--                   android:orientation="horizontal">-->
+
+            <!--                   <TextView-->
+            <!--                       android:layout_width="wrap_content"-->
+            <!--                       android:layout_height="30dp"-->
+            <!--                       android:text="Date:"-->
+            <!--                       android:textSize="18sp"-->
+            <!--                       android:textStyle="bold"-->
+            <!--                       android:textColor="@color/colorPrimary"/>-->
+            <!--                   <TextView-->
+            <!--                       android:id="@+id/transaction_savings_amount"-->
+            <!--                       android:layout_width="match_parent"-->
+            <!--                       android:layout_height="30dp"-->
+            <!--                       android:textSize="18dp"-->
+            <!--                       android:textStyle="bold"-->
+            <!--                       android:textColor="@color/colorPrimary"-->
+            <!--                       android:text="00/00/0000"/>-->
+
+            <!--               </LinearLayout>-->
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/income.saving.image"
+            android:layout_width="78dp"
+            android:layout_height="79dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/saving" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment.income.linear3"
+        android:layout_marginTop="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment.income.linear2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/income.deposit.image"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Category:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deposit"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Amount:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/transaction_deposit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="0.00"
+                    android:textColor="#4CAF50"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--               <LinearLayout-->
+            <!--                   android:layout_width="290dp"-->
+            <!--                   android:layout_height="40dp"-->
+            <!--                   android:padding="5dp"-->
+            <!--                   android:orientation="horizontal">-->
+
+            <!--                   <TextView-->
+            <!--                       android:layout_width="wrap_content"-->
+            <!--                       android:layout_height="30dp"-->
+            <!--                       android:text="Date:"-->
+            <!--                       android:textSize="18sp"-->
+            <!--                       android:textStyle="bold"-->
+            <!--                       android:textColor="@color/colorPrimary"/>-->
+            <!--                   <TextView-->
+            <!--                       android:id="@+id/transaction_deposit_date"-->
+            <!--                       android:layout_width="match_parent"-->
+            <!--                       android:layout_height="30dp"-->
+            <!--                       android:textSize="18dp"-->
+            <!--                       android:textStyle="bold"-->
+            <!--                       android:textColor="@color/colorPrimary"-->
+            <!--                       android:text="00/00/0000"/>-->
+
+            <!--               </LinearLayout>-->
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/income.deposit.image"
+            android:layout_width="78dp"
+            android:layout_height="79dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="6sp"
+            android:src="@drawable/deposit" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_below="@+id/fragment.income.linear3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/income.others.image"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Others"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Amount:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/transaction_others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="#4CAF50"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--               <LinearLayout-->
+            <!--                   android:layout_width="290dp"-->
+            <!--                   android:layout_height="40dp"-->
+            <!--                   android:padding="5dp"-->
+            <!--                   android:orientation="horizontal">-->
+
+            <!--                   <TextView-->
+            <!--                       android:layout_width="wrap_content"-->
+            <!--                       android:layout_height="30dp"-->
+            <!--                       android:text="Date:"-->
+            <!--                       android:textSize="18sp"-->
+            <!--                       android:textStyle="bold"-->
+            <!--                       android:textColor="@color/colorPrimary"/>-->
+            <!--                   <TextView-->
+            <!--                       android:id="@+id/transaction_others_date"-->
+            <!--                       android:layout_width="match_parent"-->
+            <!--                       android:layout_height="30dp"-->
+            <!--                       android:textSize="18dp"-->
+            <!--                       android:textStyle="bold"-->
+            <!--                       android:textColor="@color/colorPrimary"-->
+            <!--                       android:text="00/00/0000"/>-->
+
+            <!--               </LinearLayout>-->
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/income.others.image"
+            android:layout_width="78dp"
+            android:layout_height="79dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="6sp"
+            android:src="@drawable/others_green" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

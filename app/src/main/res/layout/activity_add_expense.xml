@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".AddExpenseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary" />
+
+        <ImageButton
+            android:id="@+id/profile_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:onClick="back"
+            android:src="@drawable/back_arrow"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Add Expense"
+            android:textColor="@color/background"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/editTextNumber2"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Date:"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:hint="Today"
+            android:inputType="date"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingBottom="10dp"
+            android:text="Amount:"
+            />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Note:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/note"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter A Necessary Note If Any"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Category:"
+            android:textSize="20dp" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/category"-->
+<!--            android:layout_width="219dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Choose From The Drop Down. \nOR \nEdit Mannually."-->
+<!--            android:inputType="text"-->
+<!--            android:paddingLeft="15dp"-->
+<!--            android:paddingTop="10dp"-->
+<!--            android:textSize="15dp" />-->
+
+        <Spinner
+            android:id="@+id/expense_category"
+            android:layout_width="206dp"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:spinnerMode="dropdown"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Payment Type:"
+            android:textSize="20dp" />
+
+
+        <Spinner
+            android:id="@+id/payment_type"
+            android:layout_width="154dp"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:spinnerMode="dropdown"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<!--        <Button-->
+<!--            android:id="@+id/autopay_button"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Add To Auto Pay"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_marginTop="60dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            tools:ignore="MissingConstraints"-->
+<!--            android:onClick="expense_autopay"/>-->
+        <Button
+            android:id="@+id/done_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textSize="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="MissingConstraints" /></LinearLayout>
+
+</LinearLayout>

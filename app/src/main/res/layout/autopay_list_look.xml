@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/background"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="25dp"
+    android:id="@+id/toplayout">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        app:cardCornerRadius="20sp"
+        app:cardBackgroundColor="@color/colorPrimaryDark">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/autopay.look.amount.layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/look"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/autopay_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/look"
+                            android:text="0.00"
+                            android:textColor="#3A3030"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/autopay.look.date.layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:layout_toEndOf="@+id/autopay.look.amount.layout"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/autopay_date_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date Limit:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/autopay_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/autopay_date_text"
+                            android:text="dd/mm/yy"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/autopay.look.time.layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:layout_toEndOf="@+id/autopay.look.date.layout"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/autopay_time_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time Limit:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/autopay_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/autopay_time_text"
+                            android:text="h/m am/pm"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/autopay.look.category.layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/autopay_category_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Category:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/autopay_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/autopay_category_text"
+                        android:text="None"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/autopay.look.note.layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:gravity="top"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/autopay_note_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Note:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/autopay_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/autopay_note_text"
+                        android:text="None"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_gravity="center_horizontal"-->
+<!--    android:background="@color/background"-->
+<!--    android:layout_marginTop="5dp"-->
+<!--    android:id="@+id/toplayout">-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        app:cardCornerRadius="25dp"-->
+<!--        app:cardBackgroundColor="@color/colorPrimaryDark">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/background">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+
+<!--                    android:layout_width="393dp"-->
+<!--                    android:layout_height="74dp"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="72dp"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:padding="5dp">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:text="Amount:"-->
+<!--                            android:textColor="@color/colorPrimary"-->
+<!--                            android:textSize="18sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/autopay_amount"-->
+<!--                            android:layout_width="96dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:text="0.00"-->
+<!--                            android:textColor="#3A3030"-->
+<!--                            android:textSize="20sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="72dp"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:padding="5dp">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:text="Date:"-->
+<!--                            android:textColor="@color/colorPrimary"-->
+<!--                            android:textSize="18sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/autopay_date"-->
+<!--                            android:layout_width="107dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:text="dd/mm/yy"-->
+<!--                            android:textSize="18dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="378dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="5dp">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:text="Category:"-->
+<!--                        android:textColor="@color/colorPrimary"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/autopay_category"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="None"-->
+<!--                        android:textSize="18dp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="top">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="90dp"-->
+<!--                        android:layout_height="35dp"-->
+<!--                        android:text="Note:"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textColor="@color/colorPrimary"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/autopay_note"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="34dp"-->
+<!--                        android:text="None"-->
+<!--                        android:textSize="18dp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+<!--</LinearLayout>-->

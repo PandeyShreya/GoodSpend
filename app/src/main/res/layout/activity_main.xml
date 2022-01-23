@@ -1,0 +1,226 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/background"
+       android:orientation="vertical"
+       tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_weight="0"
+        android:background="@color/colorPrimary"
+
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/tool_bar">
+        <!--         <Button -->
+        <!--             
+android:id="@+id/date_option" -->
+        <!--             
+android:layout_width="100dp" -->
+        <!--             
+android:layout_height="60dp" -->
+        <!--             
+android:background="FF29B329" -->
+        <!--             
+android:text="Date" -->
+        <!--             /> -->
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/main.linear1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:layout_below="@+id/toolbar"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="94dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:text="Income"
+            android:textColor="#3A3030"
+            android:textColorHighlight="#272525"
+            android:textSize="20sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/income_display"
+            android:layout_width="188dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:text="0.00"
+            android:textColor="#4CAF50"
+            android:textColorHighlight="#272525"
+            android:textSize="20sp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main.linear2"
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="65dp"
+        android:layout_below="@+id/main.linear1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="94dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Expenses"
+            android:textColor="#3A3030"
+            android:textColorHighlight="#272525"
+            android:textSize="20sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/expenses_display"
+            android:layout_width="188dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="0.00"
+            android:textColor="#CA6C6C"
+            android:textColorHighlight="#272525"
+            android:textSize="20sp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main.line"
+        android:layout_width="345dp"
+        android:layout_height="7dp"
+        android:layout_below="@+id/main.linear2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/main.linear3"
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="81dp"
+        android:layout_below="@+id/main.line"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="94dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Balance"
+            android:textColor="#3A3030"
+            android:textColorHighlight="#272525"
+            android:textSize="20sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/balance_display"
+            android:layout_width="188dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="0.00"
+            android:textColor="#3A3030"
+            android:textColorHighlight="#272525"
+            android:textSize="20sp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main.linear4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/main.linear3"
+        android:orientation="horizontal">
+        <!--         <TextView -->
+        <!--             
+android:layout_width="94dp" -->
+        <!--             
+android:layout_height="48dp" -->
+        <!--             
+android:layout_marginLeft="50dp" -->
+        <!--             
+android:layout_marginTop="100dp" -->
+        <!--             
+android:text="Income" -->
+        <!--             
+android:textColor="#3A3030" -->
+        <!--             
+android:textColorHighlight="#272525" -->
+        <!--             
+android:textSize="25sp" -->
+        <!--             
+android:textStyle="italic|bold" /> -->
+        <Button
+            android:id="@+id/income_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="100dp"
+            android:background="#2D383F"
+            android:onClick="income"
+            android:text="Income"
+            android:textSize="16sp"
+            android:textStyle="italic|bold" />
+
+        <Button
+            android:id="@+id/expenses_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="100dp"
+            android:background="#2D383F"
+            android:onClick="expenses"
+            android:text="Expenses"
+            android:textSize="16sp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/WarningMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nav_view"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:text="Message"
+        android:textColor="#CA6C6C"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

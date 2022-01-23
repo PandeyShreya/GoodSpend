@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/ConstrainLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/background" android:orientation="vertical" android:layout_gravity="center" android:padding="25dp" tools:context=".LoginActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView android:id="@+id/login_pic" android:layout_width="match_parent" android:layout_height="250dp" android:layout_marginTop="40dp" android:src="@drawable/login"/>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:focusable="true" android:focusableInTouchMode="true" android:layout_marginTop="10dp" android:textColorHint="@color/colorAccent">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/email_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/email_address" android:inputType="textEmailAddress" android:textColorHint="#FF6C02" android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:focusable="true" android:focusableInTouchMode="true" android:layout_marginTop="8dp" android:textColorHint="@color/colorAccent">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/password" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/password" android:inputType="textPassword" android:textColorHint="#FF6C02" android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button android:id="@+id/login_button" android:layout_width="match_parent" android:layout_height="58dp" android:text="LOGIN" android:textStyle="bold|italic"/>
+    <TextView android:id="@+id/forgot_password" android:layout_width="159dp" android:layout_height="wrap_content" android:layout_gravity="center" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:text="Forgot Password?" android:textColor="#2D383F" android:textSize="18sp" android:textStyle="italic|bold"/>
+    <TextView android:id="@+id/create_newacc" android:layout_width="248dp" android:layout_height="37dp" android:layout_gravity="center" android:layout_marginTop="20dp" android:layout_marginLeft="20dp" android:text="Create a new account/Signup" android:textColor="#2D383F" android:textSize="18sp" android:textStyle="bold" android:onClick="signup"/>
+</ScrollView>
+</LinearLayout>

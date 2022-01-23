@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".Fragment.ExpenseFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/expense.grocery.image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Grocery"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transaction_grocery"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="#542013"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:padding="5dp"-->
+                    <!--                android:orientation="horizontal">-->
+
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Date:"-->
+                    <!--                    android:textSize="18sp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"/>-->
+
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/transaction_grocery_date"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="00/00/0000"-->
+                    <!--                    android:textColor="@color/colorPrimary"-->
+                    <!--                    android:textSize="18dp"-->
+                    <!--                    android:textStyle="bold" />-->
+
+                    <!--            </LinearLayout>-->
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/expense.grocery.image"
+                    android:layout_width="78dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="6sp"
+                    android:src="@drawable/grocery_expense" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/expense.entertainment.image"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Entertainment"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transaction_entertainment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="#542013"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:padding="5dp"-->
+                    <!--                android:orientation="horizontal">-->
+
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Date:"-->
+                    <!--                    android:textSize="18sp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"/>-->
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/transaction_entertainment_id"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:textSize="18dp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"-->
+                    <!--                    android:text="00/00/0000"/>-->
+
+                    <!--            </LinearLayout>-->
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/expense.entertainment.image"
+                    android:layout_width="78dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="6sp"
+                    android:src="@drawable/entertainment" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/expense.kids.image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kids"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transaction_kids"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="#542013"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:padding="5dp"-->
+                    <!--                android:orientation="horizontal">-->
+
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Date:"-->
+                    <!--                    android:textSize="18sp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"/>-->
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/transaction_kids_date"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:textSize="18dp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"-->
+                    <!--                    android:text="00/00/0000"/>-->
+
+                    <!--            </LinearLayout>-->
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/expense.kids.image"
+                    android:layout_width="78dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="6sp"
+                    android:src="@drawable/kids" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/expense.fuels.image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fuels"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transaction_fuels"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="#542013"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:padding="5dp"-->
+                    <!--                android:orientation="horizontal">-->
+
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Date:"-->
+                    <!--                    android:textSize="18sp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"/>-->
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/transaction_fuels_date"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:textSize="18dp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"-->
+                    <!--                    android:text="00/00/0000"/>-->
+
+                    <!--            </LinearLayout>-->
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/expense.fuels.image"
+                    android:layout_width="78dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="6sp"
+                    android:src="@drawable/fuel" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/expense.medical.image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Medical"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transaction_medical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="#542013"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:padding="5dp"-->
+                    <!--                android:orientation="horizontal">-->
+
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Date:"-->
+                    <!--                    android:textSize="18sp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"/>-->
+
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/transaction_medical_date"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="00/00/0000"-->
+                    <!--                    android:textColor="@color/colorPrimary"-->
+                    <!--                    android:textSize="18dp"-->
+                    <!--                    android:textStyle="bold" />-->
+
+                    <!--            </LinearLayout>-->
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/expense.medical.image"
+                    android:layout_width="78dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="6sp"
+                    android:src="@drawable/medical" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/expense.savings.image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Savings/Investment"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transaction_save"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="#542013"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:padding="5dp"-->
+                    <!--                android:orientation="horizontal">-->
+
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Date:"-->
+                    <!--                    android:textSize="18sp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"/>-->
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/transaction_save_date"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:textSize="18dp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"-->
+                    <!--                    android:text="00/00/0000"/>-->
+
+                    <!--            </LinearLayout>-->
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/expense.savings.image"
+                    android:layout_width="78dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="6sp"
+                    android:src="@drawable/saving_expense" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/expense.vehicle.image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Vehicles"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transaction_vehicle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="#542013"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:padding="5dp"-->
+                    <!--                android:orientation="horizontal">-->
+
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Date:"-->
+                    <!--                    android:textSize="18sp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"/>-->
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/transaction_vehicle_date"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:textSize="18dp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"-->
+                    <!--                    android:text="00/00/0000"/>-->
+
+                    <!--            </LinearLayout>-->
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/expense.vehicle.image"
+                    android:layout_width="78dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="6sp"
+                    android:src="@drawable/vehical" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/expense.travel.image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Travel"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transaction_travel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="#542013"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:padding="5dp"-->
+                    <!--                android:orientation="horizontal">-->
+
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Date:"-->
+                    <!--                    android:textSize="18sp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"/>-->
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/transaction_travel_date"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:textSize="18dp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"-->
+                    <!--                    android:text="00/00/0000"/>-->
+
+                    <!--            </LinearLayout>-->
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/expense.travel.image"
+                    android:layout_width="78dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="6sp"
+                    android:src="@drawable/travel" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/expense.shopping.image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Shopping"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transaction_shopping"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="#542013"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:padding="5dp"-->
+                    <!--                android:orientation="horizontal">-->
+
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Date:"-->
+                    <!--                    android:textSize="18sp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"/>-->
+
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/transaction_shooping_date"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="00/00/0000"-->
+                    <!--                    android:textColor="@color/colorPrimary"-->
+                    <!--                    android:textSize="18dp"-->
+                    <!--                    android:textStyle="bold" />-->
+
+                    <!--            </LinearLayout>-->
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/expense.shopping.image"
+                    android:layout_width="78dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="6sp"
+                    android:src="@drawable/grocery" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/expense.eatingout.image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Eating Out"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transaction_food"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="#542013"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:padding="5dp"-->
+                    <!--                android:orientation="horizontal">-->
+
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Date:"-->
+                    <!--                    android:textSize="18sp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"/>-->
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/transaction_food_date"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:textSize="18dp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"-->
+                    <!--                    android:text="00/00/0000"/>-->
+
+                    <!--            </LinearLayout>-->
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/expense.eatingout.image"
+                    android:layout_width="78dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="6sp"
+                    android:src="@drawable/eating_out" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/expense.bills.image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bills"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transaction_bill"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="#542013"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:padding="5dp"-->
+                    <!--                android:orientation="horizontal">-->
+
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Date:"-->
+                    <!--                    android:textSize="18sp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"/>-->
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/transaction_bill_date"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:textSize="18dp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"-->
+                    <!--                    android:text="00/00/0000"/>-->
+
+                    <!--            </LinearLayout>-->
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/expense.bills.image"
+                    android:layout_width="78dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="6sp"
+                    android:src="@drawable/others_red" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/expense.others.image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Others"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount:"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transaction_others_expense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="#542013"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:padding="5dp"-->
+                    <!--                android:orientation="horizontal">-->
+
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Date:"-->
+                    <!--                    android:textSize="18sp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"/>-->
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/transaction_others_expense_date"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:textSize="18dp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/colorPrimary"-->
+                    <!--                    android:text="00/00/0000"/>-->
+
+                    <!--            </LinearLayout>-->
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/expense.others.image"
+                    android:layout_width="78dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="6sp"
+                    android:src="@drawable/others_red" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

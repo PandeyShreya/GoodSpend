@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category_list">
+        <item>Savings(Income)</item>
+        <item>Salary(Income)</item>
+        <item>Deposit(Income)</item>
+        <item>Others(Income)</item>
+        <item>Grocery(Expense)</item>
+        <item>Entertainment(Expense)</item>
+        <item>Kids(Expense)</item>
+        <item>Savings/Investment(Expense)</item>
+        <item>Shopping(Expense)</item>
+        <item>Bills(Expense)</item>
+        <item>Travel(Expense)</item>
+        <item>Vehicle(Expense)</item>
+        <item>Fuels(Expense)</item>
+        <item>Medical(Expense)</item>
+        <item>Eating Out(Expense)</item>
+        <item>Others(Expense)</item>
+    </string-array>
+</resources>

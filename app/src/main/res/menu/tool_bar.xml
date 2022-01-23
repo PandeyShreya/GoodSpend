@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<!--  <item-->
+<!--      android:title="@string/calender_menu"-->
+<!--      android:id="@+id/calender"-->
+<!--      android:icon="@drawable/ic_calender"-->
+<!--      app:showAsAction="ifRoom">-->
+<!--    <menu>-->
+<!--      <item-->
+<!--          android:title="@string/daily_default"-->
+<!--          android:id="@+id/daily_tool"-->
+<!--          app:showAsAction="never"-->
+<!--          />-->
+
+<!--      <item-->
+<!--          android:title="@string/weekly"-->
+<!--          android:id="@+id/weekly_tool"-->
+<!--          app:showAsAction="never"-->
+<!--          />-->
+
+<!--      <item-->
+<!--          android:title="@string/monthly"-->
+<!--          android:id="@+id/monthly_tool"-->
+<!--          app:showAsAction="never"-->
+<!--          />-->
+<!--      <item-->
+<!--          android:title="@string/yearly"-->
+<!--          android:id="@+id/yearly_tool"-->
+<!--          app:showAsAction="never"-->
+<!--          />-->
+<!--      <item-->
+<!--          android:title="@string/calender"-->
+<!--          android:id="@+id/calender_tool"-->
+<!--          app:showAsAction="never"/>-->
+<!--    </menu>-->
+
+<!--  </item>-->
+<!--  <item-->
+<!--      android:title="@string/add_member"-->
+<!--      android:icon="@drawable/ic_baseline_person_add_24"-->
+<!--      app:showAsAction="ifRoom"-->
+<!--      android:id="@+id/add_member"-->
+
+<!--    />-->
+  <item
+    android:title="Edit Profile"
+      android:id="@+id/app_setting"
+      app:showAsAction="never"
+      />
+
+    <item
+        android:title="@string/profile"
+        android:id="@+id/user_profile"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:title="@string/logout"
+        android:id="@+id/app_logout"
+        app:showAsAction="never"
+        />
+</menu>

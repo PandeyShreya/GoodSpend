@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="income_list">
+        <item>Savings</item>
+        <item>Salary</item>
+        <item>Deposit</item>
+        <item>Others</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="expense_list">
+        <item>Grocery</item>
+        <item>Entertainment</item>
+        <item>Kids</item>
+        <item>Savings/Investment</item>
+        <item>Shopping</item>
+        <item>Bills</item>
+        <item>Travel</item>
+        <item>Vehicle</item>
+        <item>Fuels</item>
+        <item>Medical</item>
+        <item>Eating Out</item>
+        <item>Others</item>
+    </string-array>
+</resources>

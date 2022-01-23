@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_transactions"
+        android:icon="@drawable/ic_baseline_event_note_24"
+        android:title="Transaction" />
+
+    <item
+        android:id="@+id/navigation_chartview"
+        android:icon="@drawable/ic_baseline_bar_chart_24"
+        android:title="Chart View" />
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_autoadd"
+        android:icon="@drawable/auto_add"
+        android:title="Auto  add" />
+
+    <item
+        android:id="@+id/navigation_alerts"
+        android:icon="@drawable/ic_baseline_add_alert_24"
+        android:title="Alerts"
+        />
+
+</menu>
